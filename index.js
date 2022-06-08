@@ -1,27 +1,27 @@
-/*const http = require('http')
+const http = require('http')
 const express = require('express')
 const app = express()
 const PORT = 8000
-const cors = require("cors")
+//const cors = require("cors")
 
-app.use(cors())
+//app.use(cors())
 
 app.get('/', (request, response) => {
     //console.log('dir name is: %s', __dirname)
-    //response.sendFile(__dirname + '/index.html')
-    response.send("hello")
+    response.sendFile(__dirname + '/index.html')
+    //response.send("hello")
 })
 
-/*app.get('/api/:commanderName', (request, response) => {
+app.get('/api/:commanderName', (request, response) => {
     let commanderName = request.params.commanderName.toLowerCase()
     if(commander[commanderName]){
         response.json(commander[commanderName])
     } else {
         response.json("No commander found")
     }
-})*/
+})
 
-/*let commander = {
+let commander = {
     "elspeth resplendent": {
         "commander": "Elspeth, Resplendent", 
         "decklist": [
@@ -179,16 +179,16 @@ app.get('/', (request, response) => {
             "Takenuma, Abandoned Mire "
             ]
     } 
-}*/
+}
 
 
 
-/*app.listen(process.env.PORT || PORT, () => {                                                //environment variable OR hardcoded port
+app.listen(process.env.PORT || PORT, () => {                                                //environment variable OR hardcoded port
     console.log(`Listning on port ${PORT}`)
 })
-console.log(`Listening on port ${PORT}`)*/
+console.log(`Listening on port ${PORT}`)
 
-const express = require('express')
+/*const express = require('express')
 const app = express()
 const port = 3000
 
@@ -200,4 +200,4 @@ app.get('/', (req, res) => {
 
 app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+})*/
