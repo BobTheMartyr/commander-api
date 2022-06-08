@@ -181,5 +181,7 @@ let commander = {
 
 
 
-app.listen(PORT)
+app.listen(process.env.PORT || PORT, () => {                                                //environment variable OR hardcoded port
+    console.log(`Listning on port ${PORT}`)
+})
 console.log(`Listening on port ${PORT}`)
