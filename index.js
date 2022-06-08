@@ -194,7 +194,8 @@ const port = 3000
 
 app.get('/', (req, res) => {
     console.log('Time is: %s', new Date().toLocaleString())
-    res.send('Hello World!')
+    //res.send('Hello World!')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.listen(process.env.PORT || port, () => {
