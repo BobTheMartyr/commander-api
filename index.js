@@ -1,4 +1,4 @@
-const http = require('http')
+/*const http = require('http')
 const express = require('express')
 const app = express()
 const PORT = 8000
@@ -21,7 +21,7 @@ app.get('/', (request, response) => {
     }
 })*/
 
-let commander = {
+/*let commander = {
     "elspeth resplendent": {
         "commander": "Elspeth, Resplendent", 
         "decklist": [
@@ -179,11 +179,23 @@ let commander = {
             "Takenuma, Abandoned Mire "
             ]
     } 
-}
+}*/
 
 
 
-app.listen(process.env.PORT || PORT, () => {                                                //environment variable OR hardcoded port
+/*app.listen(process.env.PORT || PORT, () => {                                                //environment variable OR hardcoded port
     console.log(`Listning on port ${PORT}`)
 })
-console.log(`Listening on port ${PORT}`)
+console.log(`Listening on port ${PORT}`)*/
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
