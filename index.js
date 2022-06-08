@@ -194,6 +194,7 @@ const port = 3000
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+  console.log('Time is: %s', new Date().toLocaleString())
 })
 
 app.listen(port, () => {
