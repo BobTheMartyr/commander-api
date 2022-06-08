@@ -7,9 +7,9 @@ const cors = require("cors")
 app.use(cors())
 
 app.get('/', (request, response) => {
-    console.log('dir name is: %s', __dirname)
-    response.sendFile(__dirname + '/index.html')
-    //response.send("hello")
+    //console.log('dir name is: %s', __dirname)
+    //response.sendFile(__dirname + '/index.html')
+    response.send("hello")
 })
 
 app.get('/api/:commanderName', (request, response) => {
