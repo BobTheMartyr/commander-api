@@ -12,14 +12,14 @@ app.get('/', (request, response) => {
     response.send("hello")
 })
 
-app.get('/api/:commanderName', (request, response) => {
+/*app.get('/api/:commanderName', (request, response) => {
     let commanderName = request.params.commanderName.toLowerCase()
     if(commander[commanderName]){
         response.json(commander[commanderName])
     } else {
         response.json("No commander found")
     }
-})
+})*/
 
 let commander = {
     "elspeth resplendent": {
